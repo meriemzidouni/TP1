@@ -42,4 +42,20 @@ public class TestCalculator {
         // Act : action
         int expectedResult = Calculator.sub(arg1, arg2);
    }
+
+    @Test
+     public void failedTest () {
+        // Arrange : organiser (donnees d'entres et le resultat attendu)
+        int arg1 = 1;
+        int arg2 = 1;
+        int expectedResult = 3;
+
+        // Act : action
+        int returnedResult = Calculator.add(arg1, arg2);
+
+        // Assert : verifier
+        Assert.assertEquals(expectedResult, returnedResult);
+
+    }
+
 }
