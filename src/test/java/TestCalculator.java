@@ -43,5 +43,19 @@ public class TestCalculator {
         int expectedResult = Calculator.sub(arg1, arg2);
    }
 
+    @Test
+    public void testMaxPlusMin () {
 
+        // Arrange : organiser (donnees d'entres et le resultat attendu)
+        int arg1 = Integer.MAX_VALUE;
+        int arg2 = Integer.MIN_VALUE;
+        int expectedResult = -1;
+
+        // Act : action
+        int returnedResult = Calculator.add(arg1, arg2);
+
+        // Assert : verifier
+        Assert.assertEquals(expectedResult, returnedResult);
+
+    }
 }
