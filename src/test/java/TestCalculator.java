@@ -56,6 +56,6 @@ public class TestCalculator {
 
         // Assert : verifier
         Assert.assertEquals(expectedResult, returnedResult);
+   }
 
-    }
 }
